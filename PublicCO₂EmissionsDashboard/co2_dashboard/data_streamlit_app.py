@@ -18,7 +18,7 @@ def setup_app():
 
         with st.expander("About This Dashboard"):
             st.write("""
-            This dashboard presents CO₂ emissions data for a curated set of countries between 2000 and 2023. 
+            This dashboard presents CO₂ emissions data for a selected set of countries between 2000 and 2023. 
             Built by Vineetha as part of a data science learning journey, it highlights trends in total and per capita emissions, 
             enabling comparative analysis and storytelling through interactive charts.
             """)
