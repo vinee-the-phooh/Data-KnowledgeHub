@@ -3,6 +3,7 @@ import data_explore as explore
 import data_streamlit_app as stapp
 import emissions_forecast as forecast
 import os
+os.system("pip list")
 from core.logger_config import setup_logger
 from core.custom_exceptions import AppError
 
