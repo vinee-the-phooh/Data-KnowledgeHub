@@ -1,6 +1,6 @@
 import data_cleaning as cleaning
 import data_explore as explore
-import data_streamlit_app as st
+import data_streamlit_app as stapp
 import emissions_forecast as forecast
 import os
 from core.logger_config import setup_logger
@@ -14,17 +14,17 @@ def run_dashboard():
     """
     try:
         logger.info("....Starting CO₂ Emissions Dashboard...")
-        st.setup_app()
+        stapp.setup_app()
         file_path = os.path.join(os.path.dirname(__file__), "data", "owid-co2-data.csv")
         raw_df = explore.load_data(file_path)
         cleaned_df = cleaning.clean_data(raw_df)
 
-        filtered_df, comparison_df = st.add_sidebar(cleaned_df)
-        st.display_charts(filtered_df)
-        st.display_comparison_chart(comparison_df)
-        st.display_global_top_emitters(cleaned_df)
-        st.display_download_button(filtered_df)
-        st.display_data_info(cleaned_df)
+        filtered_df, comparison_df = stapp.add_sidebar(cleaned_df)
+        stapp.display_charts(filtered_df)
+        stapp.display_comparison_chart(comparison_df)
+        stapp.display_global_top_emitters(cleaned_df)
+        stapp.display_download_button(filtered_df)
+        stapp.display_data_info(cleaned_df)
 
         forecast.run_forecast_module(cleaned_df)
 
