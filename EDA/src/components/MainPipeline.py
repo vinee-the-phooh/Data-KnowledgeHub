@@ -26,6 +26,9 @@ class MainPipeline:
             # Perform EDA
             eda_instance = eda.DataExploratory(df)
             eda_instance.get_data_head()
+            eda_instance.get_data_shape()
+            eda_instance.get_data_info()
+            eda_instance.get_data_description()
             
         except Exception as e:
             raise ex.CustomException(e, sys)

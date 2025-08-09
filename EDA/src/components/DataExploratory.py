@@ -30,6 +30,38 @@ class DataExploratory:
         except Exception as e:
             raise ex.CustomException(e, sys)
         
+    def get_data_shape(self) -> None:
+        """
+        This method retrieves the shape of the DataFrame.
+        The shape is a tuple representing the number of rows and columns in the DataFrame.
+        """
+        logger.logger.info("Getting the shape of the data")
+        try:
+            data_shape = self.df.shape
+            logger.logger.info(f"Data Shape: {data_shape}")
+        except Exception as e:
+            raise ex.CustomException(e, sys)
     
-    
-    
+    def get_data_info(self) -> None:
+        """
+        We use df.info() to check the data types of all columns and see if there are any missing values.
+        """
+        logger.logger.info("Getting data info")
+        try:
+            buffer = io.StringIO()
+            self.df.info(buf=buffer)
+            data_info = buffer.getvalue()
+            logger.logger.info(f"Data Info:\n{data_info}")
+        except Exception as e:
+            raise ex.CustomException(e, sys) 
+        
+    def get_data_description(self) -> None:
+        """
+        We use df.describe()—to get a statistical summary of the numeric columns. It helps us understand the central tendency, spread, and potential outliers in the data.
+        """
+        logger.logger.info("Getting data description")
+        try:
+            data_description = self.df.describe().to_string()
+            logger.logger.info(f"Data Description:\n{data_description}")
+        except Exception as e:
+            raise ex.CustomException(e, sys)
