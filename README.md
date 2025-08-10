@@ -1,6 +1,6 @@
 # Data-KnowledgeHub
 
-# ---Welcome to my Data-KnowledgeHub---
+# ---Welcome to My Data-KnowledgeHub---
 
 This is my personal learning space where I explore data science, machine learning, and Python programming.I started this journey to build strong skills in data analysis, visualization, and model development.
 
@@ -26,7 +26,7 @@ Machine Learning Experiments (coming soon) Beginner-friendly ML models and workf
 
 This hub uses core tools and libraries commonly used in data science and machine learning:
 
-Python 3.x – Main programming language for all projects
+Python 3.12.4 – Main programming language for all projects
 
 NumPy – For numerical operations and array handling
 
@@ -66,7 +66,7 @@ I created Data-KnowledgeHub to:
 Clone the repository:
    git clone https://github.com/vinee-the-phooh/Data-KnowledgeHub.git
 
-Install dependencies (if any):
+Install dependencies:
     pip install -r requirements.txt
 
 # About Me
