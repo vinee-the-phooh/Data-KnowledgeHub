@@ -25,11 +25,17 @@ class MainPipeline:
             df = di.DataIngestion(self.data_path).load_data()
             # Perform EDA
             eda_instance = eda.DataExploratory(df)
-            eda_instance.get_data_head()
             eda_instance.get_data_shape()
+            eda_instance.get_data_columns()
+            eda_instance.get_data_types()
+            eda_instance.get_data_head()
+            eda_instance.get_data_tail()
             eda_instance.get_data_info()
-            eda_instance.get_data_description()
-            
+            eda_instance.get_data_describe()
+            eda_instance.get_data_null_count()
+            eda_instance.get_data_duplicate_count()
+            eda_instance.get_data_unique_values_count()       
+            eda_instance.get_numerical_features_outliers()
         except Exception as e:
             raise ex.CustomException(e, sys)
         
