@@ -3,10 +3,10 @@
 # A constructor is a special method called __init__ that runs when we create an object.
 # It helps set up the object with initial values.
 
-# Why use 'self'?
-    # 'self' is a reference to the current object.
+# Why use self?
+    # self is a reference to the current object.
     # It lets each object store its own data and use its own methods. 
-    # Without 'self', all objects would share the same data — which is not what we need.
+    # Without self, all objects would share the same data — which is not what we need.
 
 
 # Case 1: Basic constructor with one variable
@@ -81,7 +81,7 @@ class Dog(Animal):
         self.name = name
 
     def speak(self):
-        # 'self.name' is used to personalize the dog's speech
+        # self.name is used to personalize the dog's speech
         print(f"{self.name} says: Woof!")
 
 

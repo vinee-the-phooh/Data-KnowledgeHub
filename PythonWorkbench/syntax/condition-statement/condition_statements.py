@@ -1,13 +1,13 @@
 #Python Conditional Statements
 
-    # - Use 'if' to check conditions and control flow
-    # - Use 'elif' for multiple checks, and 'else' for fallback
-    # - Indentation is required — no curly braces
-    # - Logical operators: and, or, not
-    # - Use 'in' for membership, 'is' for identity
-    # - Conditions can be nested or written in shorthand
-    # - Python is case-sensitive when comparing strings
-    # - Avoid using '=' (assignment) inside conditions — use '==' for comparison
+    #Use 'if' to check conditions and control flow
+    #Use 'elif' for multiple checks, and 'else' for fallback
+    #Indentation is required — no curly braces
+    #Logical operators: and, or, not
+    #Use 'in' for membership, 'is' for identity
+    #Conditions can be nested or written in shorthand
+    #Python is case-sensitive when comparing strings
+    #Avoid using '=' (assignment) inside conditions — use '==' for comparison
 
 
 
