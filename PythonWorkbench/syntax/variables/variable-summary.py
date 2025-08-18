@@ -80,7 +80,7 @@ def add(a: int, b: int) -> int:
 x = int("5")  # 5
 
 #Variables can be used in type coercion.
-result = 5 + 3.0  # int + float → float (8.0)
+result = 5 + 3.0  # int + float : float (8.0)
 
 #None is equivalent to null in other languages.
 x = None
