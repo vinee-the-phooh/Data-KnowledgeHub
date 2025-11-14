@@ -1,0 +1,13 @@
+Pagila Movie Rental Database
+
+This project uses the Pagila database, a public sample dataset designed for PostgreSQL. 
+Pagila models a real-world DVD rental business. 
+It includes tables for movies, actors, customers, rentals, payments, and staff.
+
+The dataset allows practicing real business scenarios such as:
+	 Tracking customer rentals
+	 Calculating revenue
+	 Analysing movie popularity
+	 Studying store performance
+
+SQL skills - joins, grouping, filtering, aggregations, window functions, and subqueries.
