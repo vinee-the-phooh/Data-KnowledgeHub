@@ -1,0 +1,7 @@
+ActionId,Department,ActionDescription,CreatedDate,DueDate,ClosedDate,Status,SourceUpdatedAt
+ACT-001,SafetyAssurance,Replace damaged walkway sign,2026-06-03,2026-06-10,2026-06-09,Closed,2026-06-09T05:00:00Z
+ACT-002,SafetyAssurance,Review equipment inspection checklist,2026-06-15,2026-06-30,2026-07-02,Closed,2026-07-02T05:00:00Z
+ACT-003,SafetyAssurance,Install additional storage labels,2026-07-06,2026-07-20,2026-07-18,Closed,2026-07-18T05:00:00Z
+ACT-004,SafetyAssurance,Update pedestrian access procedure,2026-07-22,2026-08-05,,In Progress,2026-08-04T05:00:00Z
+ACT-005,SafetyAssurance,Repair handrail near loading area,2026-08-10,2026-08-17,2026-08-16,Closed,2026-08-16T05:00:00Z
+ACT-006,SafetyAssurance,Schedule emergency response exercise,2026-08-25,2026-09-15,,Open,2026-09-02T05:00:00Z
